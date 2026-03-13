@@ -1,0 +1,253 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "Document Analysis Output Schema",
+  "description": "Schema for document-analyzer skill output",
+  "type": "object",
+  "required": ["analysis_metadata", "document_overview", "content_structure", "slide_mapping"],
+  "properties": {
+    "analysis_metadata": {
+      "type": "object",
+      "required": ["source_document", "document_type", "word_count", "analysis_timestamp", "confidence_score"],
+      "properties": {
+        "source_document": {
+          "type": "string",
+          "description": "Original filename of the source document"
+        },
+        "document_type": {
+          "type": "string",
+          "enum": ["pdf", "docx", "txt", "md"],
+          "description": "Detected document format"
+        },
+        "word_count": {
+          "type": "integer",
+          "minimum": 0,
+          "description": "Total word count of extracted content"
+        },
+        "analysis_timestamp": {
+          "type": "string",
+          "format": "date-time",
+          "description": "ISO-8601 timestamp of analysis"
+        },
+        "confidence_score": {
+          "type": "number",
+          "minimum": 0,
+          "maximum": 1,
+          "description": "Overall confidence score for the analysis"
+        }
+      }
+    },
+    "document_overview": {
+      "type": "object",
+      "required": ["title", "primary_theme", "purpose"],
+      "properties": {
+        "title": {
+          "type": "string",
+          "description": "Extracted or inferred document title"
+        },
+        "subtitle": {
+          "type": "string",
+          "description": "Subtitle if present in document"
+        },
+        "primary_theme": {
+          "type": "string",
+          "description": "Main topic or theme of the document"
+        },
+        "purpose": {
+          "type": "string",
+          "enum": ["inform", "persuade", "train", "report", "propose"],
+          "description": "Detected purpose of the document"
+        },
+        "target_audience": {
+          "type": "string",
+          "description": "Identified target audience"
+        }
+      }
+    },
+    "content_structure": {
+      "type": "object",
+      "required": ["sections"],
+      "properties": {
+        "sections": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "required": ["section_id", "heading", "level", "key_points"],
+            "properties": {
+              "section_id": {
+                "type": "integer",
+                "description": "Unique section identifier"
+              },
+              "heading": {
+                "type": "string",
+                "description": "Section heading text"
+              },
+              "level": {
+                "type": "integer",
+                "minimum": 1,
+                "maximum": 6,
+                "description": "Heading level (1-6)"
+              },
+              "key_points": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                },
+                "description": "Main points extracted from this section"
+              },
+              "supporting_details": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                },
+                "description": "Supporting details and examples"
+              },
+              "data_references": {
+                "type": "array",
+                "items": {
+                  "type": "object",
+                  "properties": {
+                    "type": {
+                      "type": "string",
+                      "enum": ["statistic", "quote", "date", "number"]
+                    },
+                    "value": {
+                      "type": "string"
+                    },
+                    "context": {
+                      "type": "string"
+                    }
+                  }
+                }
+              },
+              "recommended_slide_type": {
+                "type": "string",
+                "enum": ["content", "data", "quote", "image", "timeline", "two-column"],
+                "description": "Suggested slide type for this content"
+              }
+            }
+          }
+        }
+      }
+    },
+    "slide_mapping": {
+      "type": "object",
+      "required": ["recommended_slide_count", "slides"],
+      "properties": {
+        "recommended_slide_count": {
+          "type": "integer",
+          "minimum": 1,
+          "description": "Total recommended number of slides"
+        },
+        "slides": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "required": ["slide_number", "slide_type", "title"],
+            "properties": {
+              "slide_number": {
+                "type": "integer"
+              },
+              "slide_type": {
+                "type": "string",
+                "enum": ["title", "agenda", "content", "data", "quote", "image", "timeline", "two-column", "conclusion", "appendix"]
+              },
+              "title": {
+                "type": "string"
+              },
+              "subtitle": {
+                "type": "string"
+              },
+              "bullet_points": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                }
+              },
+              "source_section": {
+                "type": "string"
+              }
+            }
+          }
+        }
+      }
+    },
+    "visual_recommendations": {
+      "type": "object",
+      "properties": {
+        "charts_needed": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "slide_number": {
+                "type": "integer"
+              },
+              "chart_type": {
+                "type": "string",
+                "enum": ["bar", "pie", "line", "area", "scatter"]
+              },
+              "data_source": {
+                "type": "string"
+              }
+            }
+          }
+        },
+        "images_suggested": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "slide_number": {
+                "type": "integer"
+              },
+              "image_type": {
+                "type": "string",
+                "enum": ["diagram", "photo", "icon", "illustration", "screenshot"]
+              },
+              "description": {
+                "type": "string"
+              }
+            }
+          }
+        }
+      }
+    },
+    "extraction_notes": {
+      "type": "object",
+      "properties": {
+        "content_gaps": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "assumptions_made": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "quality_indicators": {
+          "type": "object",
+          "properties": {
+            "structure_clarity": {
+              "type": "number",
+              "minimum": 0,
+              "maximum": 1
+            },
+            "content_completeness": {
+              "type": "number",
+              "minimum": 0,
+              "maximum": 1
+            },
+            "slide_readiness": {
+              "type": "number",
+              "minimum": 0,
+              "maximum": 1
+            }
+          }
+        }
+      }
+    }
+  }
+}

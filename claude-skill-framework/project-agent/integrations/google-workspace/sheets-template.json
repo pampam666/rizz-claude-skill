@@ -1,0 +1,165 @@
+{
+  "templates": {
+    "kpi_dashboard": {
+      "name": "KPI Dashboard",
+      "description": "Track and monitor Key Performance Indicators",
+      "sheets": [
+        {
+          "name": "Dashboard",
+          "columns": [
+            { "name": "KPI Name", "type": "text", "width": 200 },
+            { "name": "Category", "type": "text", "width": 120 },
+            { "name": "Target", "type": "number", "width": 100 },
+            { "name": "Current", "type": "number", "width": 100 },
+            { "name": "Progress %", "type": "formula", "formula": "=IF(C2>0,ROUND(D2/C2*100,1),0)", "width": 100 },
+            { "name": "Status", "type": "formula", "formula": "=IF(E2>=100,\"Complete\",IF(E2>=75,\"On Track\",IF(E2>=50,\"At Risk\",\"Behind\")))", "width": 100 },
+            { "name": "Owner", "type": "text", "width": 150 },
+            { "name": "Due Date", "type": "date", "width": 120 }
+          ],
+          "formatting": {
+            "header": { "bold": true, "background": "#4285f4", "fontColor": "#ffffff" },
+            "conditionalFormatting": [
+              {
+                "range": "F:F",
+                "rules": [
+                  { "condition": "Complete", "background": "#00ff00" },
+                  { "condition": "On Track", "background": "#ffff00" },
+                  { "condition": "At Risk", "background": "#ff9900" },
+                  { "condition": "Behind", "background": "#ff0000" }
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "name": "Weekly Tracking",
+          "columns": [
+            { "name": "Week", "type": "number", "width": 80 },
+            { "name": "Date", "type": "date", "width": 120 },
+            { "name": "KPI", "type": "text", "width": 200 },
+            { "name": "Value", "type": "number", "width": 100 },
+            { "name": "Notes", "type": "text", "width": 300 }
+          ]
+        },
+        {
+          "name": "Summary",
+          "columns": [
+            { "name": "Metric", "type": "text", "width": 150 },
+            { "name": "Value", "type": "formula", "width": 100 }
+          ],
+          "rows": [
+            ["Total KPIs", "=COUNTA(Dashboard!A:A)-1"],
+            ["Completed", "=COUNTIF(Dashboard!F:F,\"Complete\")"],
+            ["On Track", "=COUNTIF(Dashboard!F:F,\"On Track\")"],
+            ["At Risk", "=COUNTIF(Dashboard!F:F,\"At Risk\")"],
+            ["Behind", "=COUNTIF(Dashboard!F:F,\"Behind\")"],
+            ["Overall Progress %", "=AVERAGE(Dashboard!E:E)"]
+          ]
+        }
+      ]
+    },
+    "content_calendar": {
+      "name": "Content Calendar",
+      "description": "Plan and track content production",
+      "sheets": [
+        {
+          "name": "Content Calendar",
+          "columns": [
+            { "name": "ID", "type": "text", "width": 80 },
+            { "name": "Title", "type": "text", "width": 250 },
+            { "name": "Type", "type": "dropdown", "options": ["Article", "Social Media", "Video", "Infographic", "Report"], "width": 120 },
+            { "name": "Status", "type": "dropdown", "options": ["Planned", "In Progress", "Review", "Published", "Cancelled"], "width": 100 },
+            { "name": "Author", "type": "text", "width": 150 },
+            { "name": "Due Date", "type": "date", "width": 120 },
+            { "name": "Publish Date", "type": "date", "width": 120 },
+            { "name": "Platform", "type": "text", "width": 120 },
+            { "name": "Keywords", "type": "text", "width": 200 },
+            { "name": "Notes", "type": "text", "width": 300 }
+          ]
+        },
+        {
+          "name": "Monthly Summary",
+          "columns": [
+            { "name": "Month", "type": "text", "width": 120 },
+            { "name": "Planned", "type": "number", "width": 100 },
+            { "name": "Published", "type": "number", "width": 100 },
+            { "name": "Completion Rate", "type": "formula", "formula": "=IF(B2>0,C2/B2*100,0)", "width": 120 }
+          ]
+        }
+      ]
+    },
+    "risk_register": {
+      "name": "Risk Register",
+      "description": "Track project risks and issues",
+      "sheets": [
+        {
+          "name": "Risks",
+          "columns": [
+            { "name": "Risk ID", "type": "text", "width": 80 },
+            { "name": "Description", "type": "text", "width": 300 },
+            { "name": "Category", "type": "dropdown", "options": ["Technical", "Resource", "Schedule", "External", "Quality"], "width": 100 },
+            { "name": "Probability", "type": "dropdown", "options": ["High", "Medium", "Low"], "width": 100 },
+            { "name": "Impact", "type": "dropdown", "options": ["High", "Medium", "Low"], "width": 100 },
+            { "name": "Risk Score", "type": "formula", "formula": "=SWITCH(D2,\"High\",3,\"Medium\",2,\"Low\",1)*SWITCH(E2,\"High\",3,\"Medium\",2,\"Low\",1)", "width": 100 },
+            { "name": "Mitigation", "type": "text", "width": 300 },
+            { "name": "Owner", "type": "text", "width": 150 },
+            { "name": "Status", "type": "dropdown", "options": ["Open", "Mitigating", "Closed", "Accepted"], "width": 100 },
+            { "name": "Date Identified", "type": "date", "width": 120 }
+          ],
+          "formatting": {
+            "conditionalFormatting": [
+              {
+                "range": "F:F",
+                "rules": [
+                  { "condition": ">6", "background": "#ff0000" },
+                  { "condition": "3-6", "background": "#ffff00" },
+                  { "condition": "<3", "background": "#00ff00" }
+                ]
+              }
+            ]
+          }
+        }
+      ]
+    },
+    "deliverables": {
+      "name": "Deliverables Tracker",
+      "description": "Track project deliverables",
+      "sheets": [
+        {
+          "name": "All Deliverables",
+          "columns": [
+            { "name": "ID", "type": "text", "width": 80 },
+            { "name": "Deliverable", "type": "text", "width": 250 },
+            { "name": "Description", "type": "text", "width": 300 },
+            { "name": "Priority", "type": "dropdown", "options": ["High", "Medium", "Low"], "width": 100 },
+            { "name": "Status", "type": "dropdown", "options": ["Not Started", "In Progress", "Completed", "Blocked"], "width": 100 },
+            { "name": "Progress %", "type": "number", "width": 100 },
+            { "name": "Start Date", "type": "date", "width": 120 },
+            { "name": "Due Date", "type": "date", "width": 120 },
+            { "name": "Owner", "type": "text", "width": 150 },
+            { "name": "Dependencies", "type": "text", "width": 200 }
+          ]
+        },
+        {
+          "name": "Summary",
+          "columns": [
+            { "name": "Status", "type": "text", "width": 120 },
+            { "name": "Count", "type": "formula", "width": 80 },
+            { "name": "Percentage", "type": "formula", "width": 100 }
+          ],
+          "rows": [
+            ["Not Started", "=COUNTIF('All Deliverables'!E:E,\"Not Started\")", "=IF($B$5>0,B2/$B$5,0)"],
+            ["In Progress", "=COUNTIF('All Deliverables'!E:E,\"In Progress\")", "=IF($B$5>0,B3/$B$5,0)"],
+            ["Completed", "=COUNTIF('All Deliverables'!E:E,\"Completed\")", "=IF($B$5>0,B4/$B$5,0)"],
+            ["Total", "=SUM(B2:B4)", "100%"]
+          ]
+        }
+      ]
+    }
+  },
+  "metadata": {
+    "version": "1.0",
+    "generated_by": "project-agent",
+    "compatible_with": "Google Sheets"
+  }
+}

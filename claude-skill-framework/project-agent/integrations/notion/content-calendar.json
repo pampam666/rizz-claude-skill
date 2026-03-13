@@ -1,0 +1,137 @@
+{
+  "database_name": "Content Calendar",
+  "description": "Plan and track content production for internship project",
+  "properties": {
+    "Title": {
+      "type": "title",
+      "title": {}
+    },
+    "Type": {
+      "type": "select",
+      "select": {
+        "options": [
+          { "name": "Article", "color": "blue" },
+          { "name": "Social Media", "color": "purple" },
+          { "name": "Video", "color": "red" },
+          { "name": "Infographic", "color": "green" },
+          { "name": "Report", "color": "orange" },
+          { "name": "Newsletter", "color": "pink" }
+        ]
+      }
+    },
+    "Status": {
+      "type": "status",
+      "status": {
+        "options": [
+          { "name": "Planned", "color": "gray" },
+          { "name": "In Progress", "color": "blue" },
+          { "name": "Review", "color": "yellow" },
+          { "name": "Published", "color": "green" },
+          { "name": "Cancelled", "color": "red" }
+        ]
+      }
+    },
+    "Author": {
+      "type": "people",
+      "people": {}
+    },
+    "Due Date": {
+      "type": "date",
+      "date": {}
+    },
+    "Publish Date": {
+      "type": "date",
+      "date": {}
+    },
+    "Platform": {
+      "type": "multi_select",
+      "multi_select": {
+        "options": [
+          { "name": "Website", "color": "gray" },
+          { "name": "Instagram", "color": "pink" },
+          { "name": "LinkedIn", "color": "blue" },
+          { "name": "TikTok", "color": "default" },
+          { "name": "Twitter", "color": "blue" },
+          { "name": "YouTube", "color": "red" },
+          { "name": "Email", "color": "green" }
+        ]
+      }
+    },
+    "Keywords": {
+      "type": "rich_text",
+      "rich_text": {}
+    },
+    "Content URL": {
+      "type": "url",
+      "url": {}
+    },
+    "Priority": {
+      "type": "select",
+      "select": {
+        "options": [
+          { "name": "High", "color": "red" },
+          { "name": "Medium", "color": "yellow" },
+          { "name": "Low", "color": "gray" }
+        ]
+      }
+    },
+    "Notes": {
+      "type": "rich_text",
+      "rich_text": {}
+    },
+    "Week Number": {
+      "type": "number",
+      "number": {
+        "format": "number"
+      }
+    }
+  },
+  "views": [
+    {
+      "name": "All Content",
+      "type": "table",
+      "sort": [{ "property": "Due Date", "direction": "ascending" }]
+    },
+    {
+      "name": "Calendar View",
+      "type": "calendar",
+      "date_property": "Publish Date"
+    },
+    {
+      "name": "By Status",
+      "type": "board",
+      "group_by": "Status"
+    },
+    {
+      "name": "By Type",
+      "type": "board",
+      "group_by": "Type"
+    },
+    {
+      "name": "Timeline",
+      "type": "timeline",
+      "date_property": "Due Date"
+    }
+  ],
+  "templates": [
+    {
+      "Title": "Weekly Social Media Post",
+      "Type": "Social Media",
+      "Status": "Planned",
+      "Platform": ["Instagram", "LinkedIn"],
+      "Priority": "High"
+    },
+    {
+      "Title": "Monthly Blog Article",
+      "Type": "Article",
+      "Status": "Planned",
+      "Platform": ["Website"],
+      "Priority": "High"
+    }
+  ],
+  "metadata": {
+    "version": "1.0",
+    "generated_by": "project-agent",
+    "compatible_with": "Notion API 2022-06-28"
+  }
+}

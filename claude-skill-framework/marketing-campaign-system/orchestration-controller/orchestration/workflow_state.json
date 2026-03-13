@@ -1,0 +1,228 @@
+{
+  "workflow_id": "campaign-${timestamp}",
+  "version": "1.0.0",
+  "created_at": "${ISO-8601-timestamp}",
+  "updated_at": "${ISO-8601-timestamp}",
+  
+  "status": {
+    "current_phase": "initialization",
+    "overall_status": "in_progress",
+    "completion_percentage": 0,
+    "ready_for_delivery": false
+  },
+  
+  "campaign_parameters": {
+    "company_name": null,
+    "website_url": null,
+    "industry": null,
+    "target_market": null,
+    "campaign_objectives": [],
+    "campaign_duration_months": 12,
+    "budget_range": null,
+    "primary_channels": [],
+    "content_requirements": {
+      "article_count": 10,
+      "word_count_range": "1200-2000"
+    }
+  },
+  
+  "brand_dna": {
+    "company_info": {
+      "name": null,
+      "tagline": null,
+      "founding_year": null,
+      "headquarters": null,
+      "company_size": null
+    },
+    "mission_statement": null,
+    "vision_statement": null,
+    "core_values": [],
+    "unique_selling_proposition": null,
+    "brand_personality": {
+      "primary_traits": [],
+      "secondary_traits": []
+    },
+    "voice_and_tone": {
+      "primary_tone": null,
+      "formality_level": null,
+      "emotional_temperature": null,
+      "do_keywords": [],
+      "dont_keywords": [],
+      "sentence_style": null,
+      "voice_characteristics": []
+    },
+    "visual_identity": {
+      "primary_colors": [],
+      "secondary_colors": [],
+      "typography": null,
+      "imagery_style": null
+    },
+    "messaging": {
+      "value_proposition": null,
+      "key_messages": [],
+      "taglines": [],
+      "elevator_pitch": null
+    },
+    "target_audience": {
+      "primary_personas": [],
+      "secondary_personas": [],
+      "pain_points": [],
+      "desired_outcomes": []
+    },
+    "competitive_positioning": {
+      "market_position": null,
+      "differentiators": [],
+      "competitors": []
+    }
+  },
+  
+  "research_artifacts": {
+    "market_overview": {
+      "market_size": {
+        "total_addressable_market": null,
+        "serviceable_addressable_market": null,
+        "serviceable_obtainable_market": null
+      },
+      "growth_rate": null,
+      "market_trends": [],
+      "market_drivers": [],
+      "market_challenges": []
+    },
+    "competitor_analysis": {
+      "direct_competitors": [],
+      "indirect_competitors": [],
+      "competitive_gaps": [],
+      "market_positioning_map": null
+    },
+    "industry_trends": {
+      "emerging_technologies": [],
+      "regulatory_changes": [],
+      "consumer_behavior_shifts": [],
+      "future_outlook": null
+    },
+    "target_audience_research": {
+      "demographics": {},
+      "psychographics": {},
+      "behavioral_patterns": [],
+      "decision_criteria": []
+    },
+    "sources": [],
+    "research_timestamp": null
+  },
+  
+  "strategy_artifacts": {
+    "positioning_strategy": {
+      "market_position": null,
+      "value_proposition": null,
+      "brand_differentiators": [],
+      "positioning_statement": null
+    },
+    "channel_strategy": {
+      "primary_channels": [],
+      "secondary_channels": [],
+      "channel_rationale": {},
+      "channel_mix_percentage": {}
+    },
+    "content_themes": {
+      "pillars": [],
+      "topics_per_pillar": {},
+      "content_calendar_overview": null
+    },
+    "messaging_framework": {
+      "primary_message": null,
+      "supporting_messages": [],
+      "proof_points": [],
+      "objection_handlers": []
+    },
+    "budget_allocation": {
+      "total_budget_range": null,
+      "channel_allocation": {},
+      "content_allocation": {},
+      "contingency_percentage": 10
+    },
+    "kpi_targets": {
+      "primary_kpis": [],
+      "secondary_kpis": [],
+      "measurement_framework": null
+    },
+    "strategy_timestamp": null
+  },
+  
+  "deliverables": {
+    "brand_dna_path": null,
+    "research_document_path": null,
+    "campaign_plan_path": null,
+    "article_paths": [],
+    "qa_report_path": null,
+    "final_delivery_path": null
+  },
+  
+  "phase_history": [
+    {
+      "phase": "initialization",
+      "started_at": "${ISO-8601-timestamp}",
+      "completed_at": null,
+      "status": "in_progress",
+      "checkpoint_validated": false,
+      "agent_used": null,
+      "outputs": [],
+      "notes": null
+    }
+  ],
+  
+  "checkpoints": {
+    "brand_dna_complete": {
+      "required": true,
+      "status": "pending",
+      "validated_at": null,
+      "validator_agent": null
+    },
+    "research_complete": {
+      "required": true,
+      "status": "pending",
+      "validated_at": null,
+      "validator_agent": null
+    },
+    "strategy_complete": {
+      "required": true,
+      "status": "pending",
+      "validated_at": null,
+      "validator_agent": null
+    },
+    "research_document_complete": {
+      "required": true,
+      "status": "pending",
+      "validated_at": null,
+      "validator_agent": null
+    },
+    "campaign_plan_complete": {
+      "required": true,
+      "status": "pending",
+      "validated_at": null,
+      "validator_agent": null
+    },
+    "articles_complete": {
+      "required": true,
+      "status": "pending",
+      "validated_at": null,
+      "validator_agent": null
+    },
+    "qa_passed": {
+      "required": true,
+      "status": "pending",
+      "validated_at": null,
+      "validator_agent": null
+    }
+  },
+  
+  "errors": [],
+  
+  "metadata": {
+    "framework_version": "1.0.0",
+    "total_phases": 7,
+    "estimated_duration_hours": null,
+    "actual_duration_hours": null,
+    "last_agent_used": null,
+    "retry_count": 0
+  }
+}

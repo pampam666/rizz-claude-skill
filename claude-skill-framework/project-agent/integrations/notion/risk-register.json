@@ -1,0 +1,156 @@
+{
+  "database_name": "Risk Register",
+  "description": "Track and manage project risks and issues",
+  "properties": {
+    "Risk": {
+      "type": "title",
+      "title": {}
+    },
+    "Description": {
+      "type": "rich_text",
+      "rich_text": {}
+    },
+    "Category": {
+      "type": "select",
+      "select": {
+        "options": [
+          { "name": "Technical", "color": "blue" },
+          { "name": "Resource", "color": "orange" },
+          { "name": "Schedule", "color": "yellow" },
+          { "name": "External", "color": "purple" },
+          { "name": "Quality", "color": "green" },
+          { "name": "Communication", "color": "pink" }
+        ]
+      }
+    },
+    "Probability": {
+      "type": "select",
+      "select": {
+        "options": [
+          { "name": "High", "color": "red" },
+          { "name": "Medium", "color": "yellow" },
+          { "name": "Low", "color": "green" }
+        ]
+      }
+    },
+    "Impact": {
+      "type": "select",
+      "select": {
+        "options": [
+          { "name": "High", "color": "red" },
+          { "name": "Medium", "color": "yellow" },
+          { "name": "Low", "color": "green" }
+        ]
+      }
+    },
+    "Risk Score": {
+      "type": "formula",
+      "formula": {
+        "expression": "if(prop(\"Probability\") == \"High\", 3, if(prop(\"Probability\") == \"Medium\", 2, 1)) * if(prop(\"Impact\") == \"High\", 3, if(prop(\"Impact\") == \"Medium\", 2, 1))"
+      }
+    },
+    "Risk Level": {
+      "type": "formula",
+      "formula": {
+        "expression": "if(prop(\"Risk Score\") >= 6, \"High\", if(prop(\"Risk Score\") >= 3, \"Medium\", \"Low\"))"
+      }
+    },
+    "Mitigation": {
+      "type": "rich_text",
+      "rich_text": {}
+    },
+    "Owner": {
+      "type": "people",
+      "people": {}
+    },
+    "Status": {
+      "type": "status",
+      "status": {
+        "options": [
+          { "name": "Open", "color": "red" },
+          { "name": "Mitigating", "color": "yellow" },
+          { "name": "Closed", "color": "green" },
+          { "name": "Accepted", "color": "gray" }
+        ]
+      }
+    },
+    "Date Identified": {
+      "type": "date",
+      "date": {}
+    },
+    "Target Resolution": {
+      "type": "date",
+      "date": {}
+    },
+    "Priority": {
+      "type": "formula",
+      "formula": {
+        "expression": "if(prop(\"Risk Score\") >= 6, \"Critical\", if(prop(\"Risk Score\") >= 3, \"Major\", \"Minor\"))"
+      }
+    }
+  },
+  "views": [
+    {
+      "name": "All Risks",
+      "type": "table",
+      "sort": [{ "property": "Risk Score", "direction": "descending" }]
+    },
+    {
+      "name": "By Status",
+      "type": "board",
+      "group_by": "Status"
+    },
+    {
+      "name": "By Category",
+      "type": "board",
+      "group_by": "Category"
+    },
+    {
+      "name": "High Priority",
+      "type": "table",
+      "filter": {
+        "property": "Risk Level",
+        "select": { "equals": "High" }
+      }
+    },
+    {
+      "name": "Risk Matrix",
+      "type": "board",
+      "group_by": "Risk Level"
+    }
+  ],
+  "templates": [
+    {
+      "Risk": "Resource Availability",
+      "Description": "Team members may not be available due to other commitments",
+      "Category": "Resource",
+      "Probability": "Medium",
+      "Impact": "High",
+      "Mitigation": "Plan work in advance and confirm availability early",
+      "Status": "Open"
+    },
+    {
+      "Risk": "Scope Creep",
+      "Description": "Project scope may expand beyond original requirements",
+      "Category": "Schedule",
+      "Probability": "Medium",
+      "Impact": "Medium",
+      "Mitigation": "Define clear scope boundaries and change control process",
+      "Status": "Open"
+    },
+    {
+      "Risk": "Technical Challenges",
+      "Description": "Unexpected technical issues may arise",
+      "Category": "Technical",
+      "Probability": "Low",
+      "Impact": "Medium",
+      "Mitigation": "Allocate buffer time for troubleshooting",
+      "Status": "Open"
+    }
+  ],
+  "metadata": {
+    "version": "1.0",
+    "generated_by": "project-agent",
+    "compatible_with": "Notion API 2022-06-28"
+  }
+}

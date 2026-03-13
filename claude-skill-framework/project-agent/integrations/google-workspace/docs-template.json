@@ -1,0 +1,176 @@
+{
+  "templates": {
+    "project_management_plan": {
+      "name": "Project Management Plan",
+      "description": "Master project document outlining objectives, scope, and approach",
+      "structure": {
+        "title": "[Project Name] - Project Management Plan",
+        "sections": [
+          {
+            "heading": "Executive Summary",
+            "level": 1,
+            "content": "Brief overview of the project, its objectives, and key deliverables."
+          },
+          {
+            "heading": "Project Objectives",
+            "level": 1,
+            "subsections": [
+              { "heading": "Primary Objectives", "level": 2, "content": "Main goals of the project." },
+              { "heading": "Secondary Objectives", "level": 2, "content": "Additional goals and outcomes." }
+            ]
+          },
+          {
+            "heading": "Scope",
+            "level": 1,
+            "subsections": [
+              { "heading": "In Scope", "level": 2, "content": "Items included in project scope." },
+              { "heading": "Out of Scope", "level": 2, "content": "Items excluded from project scope." }
+            ]
+          },
+          {
+            "heading": "Timeline",
+            "level": 1,
+            "content": "Project schedule with key milestones and deliverables."
+          },
+          {
+            "heading": "Resources",
+            "level": 1,
+            "subsections": [
+              { "heading": "Team Structure", "level": 2 },
+              { "heading": "Tools & Technology", "level": 2 }
+            ]
+          },
+          {
+            "heading": "Risk Management",
+            "level": 1,
+            "content": "Key risks and mitigation strategies."
+          },
+          {
+            "heading": "Communication Plan",
+            "level": 1,
+            "content": "Stakeholder communication approach."
+          }
+        ]
+      },
+      "formatting": {
+        "font": "Arial",
+        "size": 11,
+        "line_spacing": 1.15,
+        "margins": { "top": 1, "bottom": 1, "left": 1, "right": 1 }
+      }
+    },
+    "weekly_report": {
+      "name": "Weekly Activity Report",
+      "description": "Weekly progress report template",
+      "structure": {
+        "title": "Week [X] Activity Report",
+        "sections": [
+          {
+            "heading": "Summary",
+            "level": 1,
+            "content": "Brief summary of the week's activities and overall progress."
+          },
+          {
+            "heading": "Tasks Completed",
+            "level": 1,
+            "content": "List of tasks completed this week with status."
+          },
+          {
+            "heading": "Tasks In Progress",
+            "level": 1,
+            "content": "Current work items and their progress."
+          },
+          {
+            "heading": "Challenges & Issues",
+            "level": 1,
+            "content": "Problems encountered and solutions applied."
+          },
+          {
+            "heading": "Next Week Plan",
+            "level": 1,
+            "content": "Planned activities and goals for next week."
+          },
+          {
+            "heading": "KPI Progress",
+            "level": 1,
+            "content": "Current KPI metrics and progress towards targets."
+          },
+          {
+            "heading": "Learnings",
+            "level": 1,
+            "content": "Key learnings and insights from this week."
+          }
+        ]
+      },
+      "metadata": {
+        "fields": ["Week Number", "Date Range", "Author", "Supervisor"]
+      }
+    },
+    "deliverable_document": {
+      "name": "Deliverable Document",
+      "description": "Template for project deliverables",
+      "structure": {
+        "title": "[Deliverable Name]",
+        "sections": [
+          {
+            "heading": "Overview",
+            "level": 1,
+            "content": "Description of the deliverable and its purpose."
+          },
+          {
+            "heading": "Content",
+            "level": 1,
+            "content": "Main content of the deliverable."
+          },
+          {
+            "heading": "Supporting Materials",
+            "level": 1,
+            "content": "References, appendices, and additional resources."
+          }
+        ]
+      },
+      "metadata": {
+        "fields": ["Deliverable ID", "Version", "Author", "Reviewer", "Date"]
+      }
+    },
+    "meeting_notes": {
+      "name": "Meeting Notes",
+      "description": "Template for meeting documentation",
+      "structure": {
+        "title": "Meeting Notes - [Date]",
+        "sections": [
+          {
+            "heading": "Meeting Information",
+            "level": 1,
+            "content": "Date, time, attendees, location"
+          },
+          {
+            "heading": "Agenda",
+            "level": 1,
+            "content": "Topics to be discussed."
+          },
+          {
+            "heading": "Discussion Points",
+            "level": 1,
+            "content": "Key points from the discussion."
+          },
+          {
+            "heading": "Action Items",
+            "level": 1,
+            "content": "Tasks assigned with owners and deadlines."
+          },
+          {
+            "heading": "Next Meeting",
+            "level": 1,
+            "content": "Date and agenda items for next meeting."
+          }
+        ]
+      }
+    }
+  },
+  "metadata": {
+    "version": "1.0",
+    "generated_by": "project-agent",
+    "compatible_with": "Google Docs"
+  }
+}

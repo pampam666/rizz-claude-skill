@@ -1,0 +1,141 @@
+{
+  "database_name": "KPI Dashboard",
+  "description": "Track and monitor Key Performance Indicators for internship project",
+  "properties": {
+    "KPI Name": {
+      "type": "title",
+      "title": {}
+    },
+    "Category": {
+      "type": "select",
+      "select": {
+        "options": [
+          { "name": "Social Media", "color": "blue" },
+          { "name": "Content", "color": "green" },
+          { "name": "Traffic", "color": "purple" },
+          { "name": "SEO", "color": "orange" },
+          { "name": "Conversion", "color": "red" },
+          { "name": "General", "color": "gray" }
+        ]
+      }
+    },
+    "Target": {
+      "type": "number",
+      "number": {
+        "format": "number"
+      }
+    },
+    "Current": {
+      "type": "number",
+      "number": {
+        "format": "number"
+      }
+    },
+    "Progress": {
+      "type": "formula",
+      "formula": {
+        "expression": "if(prop(\"Target\") > 0, round(prop(\"Current\") / prop(\"Target\") * 100) / 100, 0)"
+      }
+    },
+    "Progress %": {
+      "type": "formula",
+      "formula": {
+        "expression": "round(prop(\"Progress\") * 100)"
+      }
+    },
+    "Status": {
+      "type": "select",
+      "select": {
+        "options": [
+          { "name": "Complete", "color": "green" },
+          { "name": "On Track", "color": "yellow" },
+          { "name": "At Risk", "color": "orange" },
+          { "name": "Behind", "color": "red" }
+        ]
+      }
+    },
+    "Owner": {
+      "type": "people",
+      "people": {}
+    },
+    "Due Date": {
+      "type": "date",
+      "date": {}
+    },
+    "Priority": {
+      "type": "select",
+      "select": {
+        "options": [
+          { "name": "High", "color": "red" },
+          { "name": "Medium", "color": "yellow" },
+          { "name": "Low", "color": "gray" }
+        ]
+      }
+    },
+    "Notes": {
+      "type": "rich_text",
+      "rich_text": {}
+    },
+    "Last Updated": {
+      "type": "last_edited_time",
+      "last_edited_time": {}
+    }
+  },
+  "views": [
+    {
+      "name": "All KPIs",
+      "type": "table",
+      "sort": [{ "property": "Priority", "direction": "descending" }]
+    },
+    {
+      "name": "By Status",
+      "type": "board",
+      "group_by": "Status"
+    },
+    {
+      "name": "By Category",
+      "type": "board",
+      "group_by": "Category"
+    },
+    {
+      "name": "Progress Timeline",
+      "type": "timeline",
+      "date_property": "Due Date"
+    }
+  ],
+  "templates": [
+    {
+      "title": "Social Media Followers",
+      "Category": "Social Media",
+      "Target": 10000,
+      "Current": 0,
+      "Priority": "High"
+    },
+    {
+      "title": "Content Articles",
+      "Category": "Content",
+      "Target": 20,
+      "Current": 0,
+      "Priority": "High"
+    },
+    {
+      "title": "Engagement Rate",
+      "Category": "Social Media",
+      "Target": 5,
+      "Current": 0,
+      "Priority": "Medium"
+    },
+    {
+      "title": "Website Traffic",
+      "Category": "Traffic",
+      "Target": 5000,
+      "Current": 0,
+      "Priority": "Medium"
+    }
+  ],
+  "metadata": {
+    "version": "1.0",
+    "generated_by": "project-agent",
+    "compatible_with": "Notion API 2022-06-28"
+  }
+}

@@ -1,0 +1,58 @@
+{
+  "project_name": "[Project Name]",
+  "root_folder": "[Project Name] - Internship Project",
+  "structure": {
+    "01-planning": {
+      "name": "01 - Planning Documents",
+      "description": "Project plans, WBS, Gantt charts",
+      "contents": [
+        "project-management-plan.md",
+        "work-breakdown-structure.md",
+        "gantt-chart-mermaid.md"
+      ]
+    },
+    "02-content": {
+      "name": "02 - Content & Calendar",
+      "description": "Content calendar, SEO strategy, research",
+      "contents": [
+        "content-production-calendar.md",
+        "keyword-research-seo-strategy.md",
+        "market-research-roadmap.md"
+      ]
+    },
+    "03-reports": {
+      "name": "03 - Reports & Analytics",
+      "description": "KPI dashboards, weekly reports, evaluations",
+      "contents": [
+        "kpi-monitoring-dashboard.md",
+        "weekly-activity-plan-report.md",
+        "performance-evaluation-framework.md"
+      ]
+    },
+    "04-templates": {
+      "name": "04 - Templates",
+      "description": "Reusable templates and forms",
+      "contents": [
+        "communication-stakeholder-plan.md",
+        "deliverables-tracking-sheet.md"
+      ]
+    },
+    "05-risk-management": {
+      "name": "05 - Risk & Issue Management",
+      "description": "Risk register, RACI matrix",
+      "contents": [
+        "risk-issue-register.md",
+        "raci-matrix.md"
+      ]
+    }
+  },
+  "sharing": {
+    "default_role": "editor",
+    "team_members": []
+  },
+  "metadata": {
+    "created": "[Date]",
+    "version": "1.0",
+    "generated_by": "project-agent"
+  }
+}
