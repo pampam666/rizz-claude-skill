@@ -1,0 +1,50 @@
+{
+  "comparison_matrix": {
+    "title": "Prompt Framework Comparison Matrix",
+    "generated_at": "",
+    "frameworks": [],
+    "metrics": {
+      "ease_of_use": {
+        "description": "How easily a practitioner can implement the framework (1-10 scale)",
+        "scores": {},
+        "notes": ""
+      },
+      "scalability": {
+        "description": "Production readiness and scale performance (Low/Medium/High)",
+        "scores": {},
+        "notes": ""
+      },
+      "llm_thinking_process": {
+        "description": "How the framework affects model reasoning",
+        "scores": {},
+        "notes": ""
+      },
+      "grok_compatibility": {
+        "description": "Compatibility with xAI Grok (Yes/Partial/No)",
+        "scores": {},
+        "notes": ""
+      },
+      "claude_compatibility": {
+        "description": "Compatibility with Anthropic Claude (Yes/Partial/No)",
+        "scores": {},
+        "notes": ""
+      },
+      "token_overhead": {
+        "description": "Additional tokens required (Low/Medium/High/Very High)",
+        "scores": {},
+        "notes": ""
+      },
+      "benchmark_performance": {
+        "description": "Performance on standard benchmarks",
+        "scores": {},
+        "notes": ""
+      }
+    },
+    "summary": {
+      "best_for_beginners": "",
+      "best_for_production": "",
+      "best_for_research": "",
+      "most_cost_effective": ""
+    }
+  }
+}

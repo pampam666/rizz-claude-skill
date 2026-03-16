@@ -1,0 +1,49 @@
+{
+  "workflow_id": null,
+  "version": "1.0.0",
+  "created_at": null,
+  "updated_at": null,
+  
+  "status": {
+    "current_phase": "idle",
+    "overall_status": "ready",
+    "completion_percentage": 0
+  },
+  
+  "request": {
+    "original_query": "",
+    "frameworks_to_compare": [],
+    "gdrive_links": [],
+    "special_requirements": []
+  },
+  
+  "toc_options": [],
+  "selected_toc": null,
+  
+  "research_artifacts": {
+    "sources": [],
+    "framework_data": {},
+    "gdrive_content": {}
+  },
+  
+  "analysis_artifacts": {
+    "comparison_tables": {},
+    "metrics": {},
+    "benchmarks": {}
+  },
+  
+  "deliverables": {
+    "report_path": null,
+    "citations": []
+  },
+  
+  "checkpoints": {
+    "toc_confirmed": false,
+    "research_complete": false,
+    "analysis_complete": false,
+    "report_complete": false,
+    "delivery_ready": false
+  },
+  
+  "errors": []
+}

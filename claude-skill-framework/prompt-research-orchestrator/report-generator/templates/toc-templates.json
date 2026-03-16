@@ -1,0 +1,249 @@
+{
+  "toc_templates": {
+    "option_a_comprehensive_academic": {
+      "name": "Comprehensive Academic",
+      "estimated_pages": "15-20",
+      "best_for": "Academic research, literature reviews",
+      "sections": [
+        {
+          "id": 1,
+          "title": "Title Page",
+          "subsections": []
+        },
+        {
+          "id": 2,
+          "title": "Executive Summary",
+          "subsections": ["Key Findings", "Recommendations", "Quick Comparison"]
+        },
+        {
+          "id": 3,
+          "title": "Literature Review",
+          "subsections": ["Historical Context", "Current State of Research", "Research Gaps"]
+        },
+        {
+          "id": 4,
+          "title": "Framework Descriptions",
+          "subsections": ["Framework A Overview", "Framework B Overview", "Technical Specifications"]
+        },
+        {
+          "id": 5,
+          "title": "Methodology",
+          "subsections": ["Research Approach", "Source Selection", "Analysis Framework"]
+        },
+        {
+          "id": 6,
+          "title": "Comparison Tables",
+          "subsections": ["Pros/Cons Analysis", "Ease of Use Ratings", "LLM Thinking Process", "Compatibility Matrix"]
+        },
+        {
+          "id": 7,
+          "title": "Benchmark Analysis",
+          "subsections": ["Performance Metrics", "Token Efficiency", "Speed Comparisons", "Accuracy Results"]
+        },
+        {
+          "id": 8,
+          "title": "Discussion",
+          "subsections": ["Key Insights", "Trade-offs", "Implementation Considerations"]
+        },
+        {
+          "id": 9,
+          "title": "Conclusions",
+          "subsections": ["Summary of Findings", "Recommendations", "Future Directions"]
+        },
+        {
+          "id": 10,
+          "title": "References",
+          "subsections": []
+        }
+      ]
+    },
+    "option_b_practitioner_focused": {
+      "name": "Practitioner-Focused",
+      "estimated_pages": "8-12",
+      "best_for": "Implementation decisions, team guides",
+      "sections": [
+        {
+          "id": 1,
+          "title": "Title Page",
+          "subsections": []
+        },
+        {
+          "id": 2,
+          "title": "Quick Reference",
+          "subsections": ["At-a-Glance Comparison", "Best For Scenarios", "Key Numbers"]
+        },
+        {
+          "id": 3,
+          "title": "Framework Overview",
+          "subsections": ["Framework A Summary", "Framework B Summary", "Core Differences"]
+        },
+        {
+          "id": 4,
+          "title": "Pros/Cons Tables",
+          "subsections": ["Framework A Pros/Cons", "Framework B Pros/Cons", "Side-by-Side"]
+        },
+        {
+          "id": 5,
+          "title": "Ease of Use Ratings",
+          "subsections": ["Implementation Complexity", "Documentation Quality", "Learning Curve"]
+        },
+        {
+          "id": 6,
+          "title": "Implementation Guide",
+          "subsections": ["Getting Started", "Best Practices", "Common Pitfalls", "Code Examples"]
+        },
+        {
+          "id": 7,
+          "title": "Recommendations",
+          "subsections": ["When to Use Framework A", "When to Use Framework B", "Decision Tree"]
+        },
+        {
+          "id": 8,
+          "title": "References",
+          "subsections": []
+        }
+      ]
+    },
+    "option_c_teological_deep_dive": {
+      "name": "Technical Deep-Dive",
+      "estimated_pages": "12-15",
+      "best_for": "Engineering teams, performance optimization",
+      "sections": [
+        {
+          "id": 1,
+          "title": "Title Page",
+          "subsections": []
+        },
+        {
+          "id": 2,
+          "title": "Technical Specifications",
+          "subsections": ["Architecture Overview", "Mechanism Details", "Technical Requirements"]
+        },
+        {
+          "id": 3,
+          "title": "LLM Thinking Process Analysis",
+          "subsections": ["Reasoning Patterns", "Token Flow", "Internal Representations"]
+        },
+        {
+          "id": 4,
+          "title": "Token Efficiency",
+          "subsections": ["Overhead Analysis", "Optimization Techniques", "Cost Projections"]
+        },
+        {
+          "id": 5,
+          "title": "Scalability Assessment",
+          "subsections": ["Production Readiness", "Load Handling", "Error Rates at Scale"]
+        },
+        {
+          "id": 6,
+          "title": "Grok/Claude Compatibility",
+          "subsections": ["Claude Implementation", "Grok Implementation", "Cross-Platform Notes"]
+        },
+        {
+          "id": 7,
+          "title": "Performance Benchmarks",
+          "subsections": ["Accuracy Metrics", "Latency Measurements", "Comparative Results"]
+        },
+        {
+          "id": 8,
+          "title": "Technical Recommendations",
+          "subsections": ["Architecture Choice", "Optimization Priorities", "Monitoring Setup"]
+        },
+        {
+          "id": 9,
+          "title": "References",
+          "subsections": []
+        }
+      ]
+    },
+    "option_d_executive_summary": {
+      "name": "Executive Summary",
+      "estimated_pages": "5-8",
+      "best_for": "Decision makers, quick overviews",
+      "sections": [
+        {
+          "id": 1,
+          "title": "Title Page",
+          "subsections": []
+        },
+        {
+          "id": 2,
+          "title": "Key Findings",
+          "subsections": ["Main Conclusion", "Critical Insights", "Action Items"]
+        },
+        {
+          "id": 3,
+          "title": "Comparison Matrix",
+          "subsections": ["Side-by-Side Table", "Metric Highlights", "Winner by Category"]
+        },
+        {
+          "id": 4,
+          "title": "Recommendations",
+          "subsections": ["Primary Recommendation", "Alternative Options", "Risk Assessment"]
+        },
+        {
+          "id": 5,
+          "title": "Implementation Roadmap",
+          "subsections": ["Quick Wins", "Medium-Term Goals", "Resource Requirements"]
+        },
+        {
+          "id": 6,
+          "title": "References",
+          "subsections": []
+        }
+      ]
+    },
+    "option_e_research_paper": {
+      "name": "Research Paper Format",
+      "estimated_pages": "20-25",
+      "best_for": "Publications, academic submissions",
+      "sections": [
+        {
+          "id": 1,
+          "title": "Title Page",
+          "subsections": []
+        },
+        {
+          "id": 2,
+          "title": "Abstract",
+          "subsections": []
+        },
+        {
+          "id": 3,
+          "title": "Introduction",
+          "subsections": ["Background", "Motivation", "Research Questions", "Contributions"]
+        },
+        {
+          "id": 4,
+          "title": "Background",
+          "subsections": ["Prompt Engineering Overview", "Related Work", "Framework History"]
+        },
+        {
+          "id": 5,
+          "title": "Methods",
+          "subsections": ["Research Design", "Data Collection", "Analysis Approach", "Evaluation Criteria"]
+        },
+        {
+          "id": 6,
+          "title": "Results",
+          "subsections": ["Framework Analysis", "Comparison Results", "Benchmark Data", "Statistical Analysis"]
+        },
+        {
+          "id": 7,
+          "title": "Discussion",
+          "subsections": ["Interpretation", "Implications", "Limitations", "Threats to Validity"]
+        },
+        {
+          "id": 8,
+          "title": "Conclusion",
+          "subsections": ["Summary", "Future Work", "Final Recommendations"]
+        },
+        {
+          "id": 9,
+          "title": "Bibliography",
+          "subsections": []
+        }
+      ]
+    }
+  }
+}

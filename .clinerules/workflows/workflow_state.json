@@ -1,39 +1,14 @@
 {
-  "schema_version": "1.0",
-  "workflow_id": "",
-  "blueprint_name": "",
-  "current_phase": "PENDING",
-  "status": "pending",
-  "created_files": [],
-  "validation_results": [],
-  "errors": [],
-  "plan_details": {
-    "summary": "",
-    "directory_tree": "",
-    "file_list": [],
-    "user_confirmed": false
-  },
-  "act_details": {
-    "files_total": 0,
-    "files_created": 0,
-    "files_remaining": 0,
-    "current_file": ""
-  },
-  "validation_details": {
-    "checks_total": 0,
-    "checks_passed": 0,
-    "checks_failed": 0,
-    "checks_warning": 0
-  },
-  "completion_details": {
-    "files_created": 0,
-    "validation_passed": false,
-    "output_location": ""
-  },
-  "metadata": {
-    "created_at": "",
-    "updated_at": "",
-    "author": "cline-skill-builder",
-    "parent_workflow": ""
-  }
+  "schema_version": "2.0",
+  "skill_name": "",
+  "skill_path": "",
+  "workspace_path": "",
+  "current_iteration": 0,
+  "current_stage": "intent",
+  "started_at": "",
+  "updated_at": "",
+  "iterations": [],
+  "test_cases": [],
+  "feedback_pending": false,
+  "description_optimized": false
 }
