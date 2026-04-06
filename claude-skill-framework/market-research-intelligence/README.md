@@ -108,7 +108,7 @@ See the `examples/` directory for sample inputs and outputs:
 - `sample-input-csv.txt` - SEO data from Ahrefs/Semrush
 - `sample-input-json.txt` - Social media analytics JSON
 - `sample-input-mixed.txt` - Combined format example
-- `sample-output-report.md` - Complete analysis report
+- `sample-output.md` - Complete analysis report
 
 ## Reference Documentation
 

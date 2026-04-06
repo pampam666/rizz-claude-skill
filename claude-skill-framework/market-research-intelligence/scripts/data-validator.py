@@ -103,7 +103,7 @@ class DataValidator:
                 'tech_detected': tech_found
             }
             
-            return len(self.errors) == 00 self._get_results()
+            return len(self.errors) == 0, self._get_results()
             
         except Exception as e:
             self.errors.append(f"CSV parsing error: {str(e)}")
