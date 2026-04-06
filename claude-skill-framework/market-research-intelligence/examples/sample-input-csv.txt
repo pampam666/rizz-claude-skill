@@ -1,0 +1,51 @@
+# Sample Input: CSV Format (Ahrefs/Semrush Export)
+# Competitor: SolarKita.id
+# Data Source: Ahrefs Site Explorer Export
+
+## SEO Metrics (CSV Format)
+```csv
+Metric,Value,Notes
+Domain Rating,45,Ahrefs DR score
+URL Rating,42,Homepage authority
+Organic Traffic,12500,Monthly estimated visits
+Paid Traffic,850,Google Ads traffic
+Referring Domains,320,Unique backlink sources
+Total Backlinks,4520,Total incoming links
+.do Follow,12,Government/education links
+```
+
+## Top Keywords (CSV Format)
+```csv
+Keyword,Position,Volume,CPC,Difficulty,URL
+panel surya,8,5400,0.85,65,https://solarkita.id/
+harga panel surya,12,2900,0.92,58,https://solarkita.id/harga
+panel surya untuk rumah,15,1800,0.78,52,https://solarkita.id/residential
+instalasi panel surya,22,1200,0.95,48,https://solarkita.id/installation
+solar panel indonesia,18,890,0.72,55,https://solarkita.id/
+panel surya murah,35,2100,0.88,45,https://solarkita.id/harga
+kalkulator panel surya,28,650,0.65,38,https://solarkita.id/calculator
+```
+
+## Backlink Profile Summary (CSV Format)
+```csv
+Source Domain,DR,Link Type,Anchor Text
+kompas.com,78,DoFollow,"sumber energi terbarukan"
+detik.com,72,DoFollow,"panel surya"
+liputan6.com,68,NoFollow,"SolarKita"
+antaranews.com,65,DoFollow,"energi surya"
+kumparan.com,62,DoFollow,"solar panel"
+```
+
+## Content Gap Analysis (CSV Format)
+```csv
+Keyword,Volume,Difficulty,Competitor Position,Our Opportunity
+biaya instalasi panel surya,3500,42,Not Ranking,High
+subsidi panel surya,890,35,Not Ranking,Medium
+perawatan panel surya,720,38,Not Ranking,High
+panel surya untuk bisnis,1100,45,Not Ranking,High
+roi panel surya,580,32,Not Ranking,Very High
+```
+
+---
+Usage: Copy the CSV data above and paste it when requesting analysis.
+Command: "Use market-research-intelligence skill to analyze this competitor SEO data"

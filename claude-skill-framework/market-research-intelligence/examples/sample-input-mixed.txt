@@ -1,0 +1,114 @@
+# Sample Input: Mixed Format (Combined Data Sources)
+# Competitor: SolarKita.id
+# Data Source: Ahrefs Export + Manual Research + BuiltWith Scan
+
+---
+
+## COMPETITOR PROFILE
+Company: PT SolarKita Indonesia
+Website: https://solarkita.id
+Industry: Solar Panel Installation (Renewable Energy)
+Location: Jakarta, Indonesia (serving Jabodetabek area)
+Founded: 2019
+
+---
+
+## SEO DATA (from Ahrefs)
+Domain Rating: 45
+Organic Traffic: 12,500/month
+Referring Domains: 320
+Total Backlinks: 4,520
+
+Top 5 Keywords:
+1. "panel surya" - Position 8, Volume 5,400
+2. "harga panel surya" - Position 12, Volume 2,900
+3. "panel surya untuk rumah" - Position 15, Volume 1,800
+4. "instalasi panel surya" - Position 22, Volume 1,200
+5. "solar panel indonesia" - Position 18, Volume 890
+
+Search Intent: Mix of informational (40%) and transactional (60%)
+
+---
+
+## SOCIAL MEDIA PRESENCE (Manual Research)
+
+Instagram (@solarkita.id):
+- Followers: 15,000
+- Posts: 342
+- Avg Likes: 200/post (1.3% engagement rate)
+- Posting: 3x/week
+- Content: Installation photos, customer testimonials, energy tips
+
+Facebook (SolarKita Indonesia):
+- Followers: 8,000
+- Posts: 156
+- Avg Likes: 50/post (0.6% engagement rate)
+- Posting: 1x/week (inconsistent)
+
+YouTube (SolarKita Official):
+- Subscribers: 2,000
+- Videos: 10 (last upload 6 months ago)
+- Content: Installation tutorials (Indonesian)
+
+TikTok: NOT PRESENT
+LinkedIn: NOT PRESENT
+
+---
+
+## TECH STACK (from BuiltWith Scan)
+CMS: WordPress 6.3 with Elementor Pro
+Theme: Custom Elementor theme
+Hosting: Shared hosting (cPanel detected)
+Server: Apache
+CDN: None detected
+SSL: Let's Encrypt
+
+Analytics & Tracking:
+- Google Analytics 4 (GA4)
+- Facebook Meta Pixel
+- Google Tag Manager
+
+Marketing Tools:
+- Tidio Chat (rule-based chatbot)
+- Mailchimp (basic integration, no automation detected)
+- WhatsApp Business API
+
+Performance:
+- Page Load Time: 4.5 seconds (measured via PageSpeed Insights)
+- Mobile PageSpeed Score: 45/100
+- Desktop PageSpeed Score: 52/100
+- Core Web Vitals: LCP 4.2s (poor), FID 180ms (needs improvement), CLS 0.15 (good)
+
+AI Implementation:
+- Chatbot: Tidio (rule-based, NOT AI-powered)
+- ROI Calculator: Static image only (not interactive)
+- Email Automation: None detected (manual follow-ups likely)
+
+---
+
+## CONTENT ANALYSIS (Manual Review)
+Content Pillars:
+1. Product showcase (panel specifications, pricing)
+2. Customer testimonials (before/after bills)
+3. Installation process (educational)
+4. Company credentials (certifications, partnerships)
+
+Tone of Voice: Friendly, approachable, slightly promotional
+
+Blog/Articles: NOT FOUND (no educational content section)
+
+Lead Magnets: Static ROI calculator image, consultation form
+
+---
+
+## ADDITIONAL NOTES
+- Website has no blog section (missed SEO opportunity)
+- No live chat support (only chatbot)
+- No pricing transparency (prices not listed, must contact)
+- No online booking system (lead capture via form only)
+- Last website update detected: ~3 months ago
+
+---
+
+Usage: Paste all the data above when requesting a comprehensive analysis.
+Command: "Use market-research-intelligence skill to analyze this competitor data comprehensively"

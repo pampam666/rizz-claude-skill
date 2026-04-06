@@ -1,0 +1,123 @@
+# Sample Input: JSON Format (Social Media Analytics)
+# Competitor: SolarKita.id
+# Data Source: Meta Ads Library, Instagram Insights, YouTube Analytics
+
+## Social Media Metrics (JSON Format)
+```json
+{
+  "competitor": "SolarKita.id",
+  "analysis_date": "2026-04-06",
+  "social_media": {
+    "instagram": {
+      "handle": "@solarkita.id",
+      "followers": 15000,
+      "following": 245,
+      "posts_count": 342,
+      "avg_likes_per_post": 200,
+      "avg_comments_per_post": 15,
+      "posting_frequency": {
+        "posts_per_week": 3,
+        "consistency_score": 0.85
+      },
+      "engagement_rate": 0.0133,
+      "top_content_themes": [
+        "installation process",
+        "customer testimonials",
+        "before/after comparisons",
+        "energy saving tips"
+      ],
+      "content_formats": {
+        "image": 0.55,
+        "carousel": 0.30,
+        "reel": 0.15,
+        "video": 0.00
+      }
+    },
+    "facebook": {
+      "page_name": "SolarKita Indonesia",
+      "followers": 8000,
+      "posts_count": 156,
+      "avg_likes_per_post": 50,
+      "avg_comments_per_post": 5,
+      "avg_shares_per_post": 8,
+      "posting_frequency": {
+        "posts_per_week": 1,
+        "consistency_score": 0.45
+      },
+      "engagement_rate": 0.0063,
+      "last_post_date": "2026-03-15"
+    },
+    "youtube": {
+      "channel_name": "SolarKita Official",
+      "subscribers": 2000,
+      "total_videos": 10,
+      "total_views": 45000,
+      "avg_views_per_video": 4500,
+      "top_videos": [
+        {
+          "title": "Cara Install Panel Surya di Rumah",
+          "views": 12000,
+          "likes": 340,
+          "comments": 45,
+          "published": "2024-08-15"
+        },
+        {
+          "title": "Testimoni Pelanggan SolarKita",
+          "views": 8500,
+          "likes": 280,
+          "comments": 32,
+          "published": "2024-06-20"
+        }
+      ],
+      "last_upload_date": "2025-10-22",
+      "inactive_months": 6
+    },
+    "tiktok": {
+      "exists": false,
+      "note": "No official TikTok account found"
+    },
+    "linkedin": {
+      "exists": false,
+      "note": "No company page found"
+    }
+  },
+  "tone_of_voice": "friendly_approachable",
+  "dominant_language": "Indonesian",
+  "brand_mentions_last_30_days": 45
+}
+```
+
+## Meta Ads Library Data (JSON Format)
+```json
+{
+  "competitor": "SolarKita.id",
+  "active_ads": {
+    "facebook_instagram": true,
+    "google_ads": true,
+    "tiktok_ads": false
+  },
+  "ad_library_analysis": {
+    "total_active_ads": 12,
+    "ad_formats": {
+      "image_ads": 6,
+      "video_ads": 4,
+      "carousel_ads": 2
+    },
+    "common_ctas": [
+      "Daftar Konsultasi Gratis",
+      "Dapatkan Penawaran",
+      "Hubungi Kami"
+    ],
+    "estimated_monthly_spend": 15000000,
+    "target_audience": [
+      "homeowners 30-50 years",
+      "middle-upper income",
+      "jabodetabek area residents"
+    ]
+  }
+}
+```
+
+---
+Usage: Copy the JSON data above and paste it when requesting analysis.
+Command: "Use market-research-intelligence skill to analyze this social media data"
